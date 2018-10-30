@@ -1,6 +1,6 @@
-# vnxiangpu
+# AI-hospital
 
-> A Vue.js project
+> This project is based on the backstage management system developed by vue. Js with element- UI
 
 ## Build Setup
 
