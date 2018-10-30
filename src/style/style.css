@@ -1,0 +1,172 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Microsoft YaHei, tahoma, Arial, SimSun;
+  font-size: 14px;
+  background-color: rgb(245, 245, 245);
+  ;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+em,
+i,
+s {
+  font-style: normal;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+ul,
+menu,
+dir {
+  -webkit-padding-start: 0;
+}
+
+.left {
+  float: left;
+}
+
+.el-message {
+  width: 90%;
+}
+
+.el-message .el-icon-error {
+  display: none;
+}
+
+.el-container .el-main {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.el-container .el-main {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.el-container .el-header {
+  height: 80px;
+  padding: 0;
+}
+
+.clearfix {
+  content: "";
+  display: "none";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+/* 象翌控股切换样式 */
+.el-tabs__header {
+  margin: 0;
+  background-color: #306FF0;
+}
+.holding .el-tabs__nav-wrap{
+  padding-left: 20px;
+}
+.holding .el-tabs__header{
+  margin: 0 0 13px;
+}
+.holding .el-tabs__nav-wrap::after{
+  background-color: #306FF0;
+}
+.holding .el-tabs__active-bar{
+  background-color: #fff;
+}
+.holding .el-tabs__item {
+  font-size: 16px;
+  color:rgba(255,255,255,0.7);
+}
+.holding .el-tabs__item:hover {
+  color:#fff;
+}
+.holding .el-tabs__item.is-active {
+  color: #fff;
+}
+
+.el-tabs__active-bar {
+  background-color: #fff;
+}
+
+.el-tabs__nav-wrap::after {
+  background-color: transparent;
+}
+.rolelist .choicerole .el-switch__core{
+  height: 16px;
+}
+.rolelist .choicerole .el-switch__core:after {
+  top: -1px;
+  left: -1px;
+  margin-top: -2px;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rolelist .is-checked .el-switch__core:after {
+  top: -1px;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  background-color: #306FF0;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(48, 111, 240, 0.42);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(48, 111, 240, 0.42);
+  box-shadow: 0px 4px 8px 0px rgba(48, 111, 240, 0.42);
+}
+.i_cusiframe .serlist{
+  box-sizing: border-box;
+}

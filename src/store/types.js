@@ -1,0 +1,67 @@
+//清空数据
+export const SET_STATE = 'SET_STATE'
+
+export const GET_STATE = 'GET_STATE'
+
+//用户类型
+export const SET_USER_B_C = 'SET_USER_B_C'
+
+export const GET_USER_B_C = 'GET_USER_B_C'
+
+//用户类型
+export const SET_USER_TYPE = 'SET_USER_TYPE'
+
+export const GET_USER_TYPE = 'GET_USER_TYPE'
+
+//登录个人信息
+export const SET_USER_INFO = 'SET_USER_INFO'
+
+export const GET_USER_INFO = 'GET_USER_INFO'
+
+//当前应用模块
+export const SET_CURRENT_APPLY_MODULE = 'SET_CURRENT_APPLY_MODULE'
+
+export const GET_CURRENT_APPLY_MODULE = 'GET_CURRENT_APPLY_MODULE'
+
+//登录个人信息
+export const SET_USER_COMP_INFO = 'SET_USER_COMP_INFO'
+
+export const GET_USER_COMP_INFO = 'GET_USER_COMP_INFO'
+
+//当前角色  currentRole
+export const SET_CURRENT_ROLE = 'SET_CURRENT_ROLE'
+
+export const GET_CURRENT_ROLE = 'GET_CURRENT_ROLE'
+
+//模块列表信息  moduleInfo
+export const SET_MODULE_INFO = 'SET_MODULE_INFO'
+
+export const GET_MODULE_INFO = 'GET_MODULE_INFO'
+
+//当前模块列表信息  currentModule
+export const SET_CURRENT_MODULE = 'SET_CURRENT_MODULE'
+
+export const GET_CURRENT_MODULE = 'GET_CURRENT_MODULE'
+
+//当前组织信息  currentOrganization
+export const SET_CURRENT_ORGANIZATION = 'SET_CURRENT_ORGANIZATION'
+
+export const GET_CURRENT_ORGANIZATION = 'GET_CURRENT_ORGANIZATION'
+
+
+
+export const SET_TERMINAL_AUTHORITY_LIST = 'SET_TERMINAL_AUTHORITY_LIST'
+
+export const GET_TERMINAL_AUTHORITY_LIST = 'GET_TERMINAL_AUTHORITY_LIST'
+
+export const SET_CONTROL_SHOW = 'SET_CONTROL_SHOW'
+
+export const GET_CONTROL_SHOW = 'GET_CONTROL_SHOW'
+
+export const SET_HEADER_TITLE = 'SET_HEADER_TITLE'
+
+export const GET_HEADER_TITLE = 'GET_HEADER_TITLE'
+
+export const SET_SIDE_BAR_STATE = 'SET_SIDE_BAR_STATE'
+
+export const GET_SIDE_BAR_STATE = 'GET_SIDE_BAR_STATE'

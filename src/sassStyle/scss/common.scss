@@ -1,0 +1,270 @@
+
+$blank: 13%;
+$leftWidth: 260px;
+$leftHeaderHeight: 200px;
+$mainHeaderHeight: 80px;
+
+html,body,#app,.wrapper,.el-container{
+	width:100%;
+	/* height:100%;
+	overflow: hidden; */
+}
+.wrapper{
+	width: 74%;
+	margin-left: $blank;
+	padding-right: $blank;
+}
+body{
+	font-family:"Helvetica Neue",Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+.content{
+	background-image: #fff;
+	width: auto;
+	height: 100%;
+	padding:40px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+// message 提示框宽度
+.el-message{
+	width: 30%;
+}
+
+.el-container{
+	.el-aside{
+		width: $leftWidth;
+		height: 100vh;  
+		position: fixed;
+		top: 0;
+		left: $blank;
+		overflow-x: hidden;
+		.slide-bar-main{
+			.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus{
+				background: #eee;
+			}
+			.el-menu::before{
+				display: none;
+				content: '';
+			}
+			.side-bottom-box{
+				.el-menu{
+					background: #eee;
+				}
+			}
+			.side-main-block{
+				width: 280px;
+		    overflow-y: scroll;
+				max-height: calc(100vh - #{$leftWidth});
+				.ga-cell{
+					// border-bottom: 2px solid #EAEAEA;
+					.g-cell-boxes .g-title-box{
+						padding-top: 0px;
+						// padding-bottom: 0px;
+						.c-item-box{
+							padding: 5px 0;
+						}
+					}
+					.g-cell-boxes:first-child .g-title-box{
+						padding-top: 25px;
+					}
+				}
+				.g-title-box{
+					width: 258px;
+				}
+			}
+		}
+	}
+	.el-container{
+		width: calc(100% - #{$leftWidth});
+		height: 100%;
+		.el-main{
+			margin: 0;
+			width: 100%;
+			min-width: 100%;
+			padding-top: $mainHeaderHeight;
+			padding-left: $leftWidth;
+		}
+		.el-header{
+			position: fixed;
+			top: 0;
+			left: calc(#{$blank} + #{$leftWidth});
+			right: $blank;
+			z-index: 100;
+			background: #306FF0;
+			color: #fff;
+		}
+		.el-header.headermove{
+			animation:myheadermove 1s;
+			left: $blank;
+		}
+		.el-header.headerleave{
+			animation:myheaderleave 1s;
+			left: calc(#{$blank} + #{$leftWidth});
+		}
+		.el-main.headermove{
+			animation:mymainmove 1s;
+			padding-left: 0px;
+		}
+		.el-main.headerleave{
+			animation:mymainleave 1s;
+			padding-left: $leftWidth;
+		}
+	}
+}
+
+@keyframes mymainmove{
+	from{
+		padding-left: $leftWidth;
+	}
+	to{
+		padding-left: 0;
+	}
+}
+
+@keyframes mymainleave{
+	from{
+		padding-left: 0;
+	}
+	to{
+		padding-left: $leftWidth;
+	}
+}
+
+@keyframes myheadermove{
+	from{
+		left: calc(#{$blank} + #{$leftWidth});
+	}
+	to{
+		left: $blank;
+	}
+}
+
+@keyframes myheaderleave{
+	from{
+		left: $blank;
+	}
+	to{
+		left: calc(#{$blank} + #{$leftWidth});
+	}
+}
+
+// 公共样式 -- 侧边栏左右padding
+.g-pad{
+	padding: 0 25px;
+}
+// 公共样式 -- 图片去除默认样式
+.g-img{
+	display: block;
+}
+
+// 过渡动画 ----  1.fade
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+// 过渡动画 ----  2.slide-fade
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+	transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	// animation: mysideheight 5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+	transform: translateX(10px);
+	// height: 0;
+  opacity: 0;
+}
+@keyframes mysideheight{
+	0%{
+		height: 75px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+
+// 过渡动画 ----  3.bounce
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+		transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// 过渡动画  ----  4.overturn
+.overturn-enter-active {
+  animation: overturn-in .5s;
+}
+.overturn-leave-active {
+  animation: overturn-in .5s;
+}
+@keyframes overturn-in {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+// 过渡动画  ----  5.fluency
+.fluency-main-fade {
+  animation: fluency-in .5s;
+}
+@keyframes fluency-in {
+  0% {
+		height: 100px;
+  }
+  100% {
+  	height: 0px;
+  }
+}
+
+.sm-title-icon{
+	animation: spin .5s linear 1;
+}
+.sml-title-icon{
+	animation: spins .5s linear 1;
+}
+@keyframes spin {
+	0%   {
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+ @keyframes spins {
+	0%   {
+		-webkit-transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
